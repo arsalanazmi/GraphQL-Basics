@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy:dev": "prisma migrate dev --name init --preview-feature",
+    "postdeploy:dev": "prisma generate",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "author": "Arsalan Raza Azmi",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^2.17.0",
+    "apollo-server": "^2.19.2",
+    "graphql": "^15.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "prisma": "^2.17.0"
+  }
+}
